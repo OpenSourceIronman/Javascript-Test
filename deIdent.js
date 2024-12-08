@@ -1,5 +1,12 @@
-const axios = require('axios'); // HTTP client for API requests
+//const axios = require('axios'); // HTTP client for API requests
 //import axios from 'axios';
+
+import axios from './node_modules/axios/dist/axios.min.js';
+
+// Example usage
+axios.get('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
 
 
 console.log("deIdent.js is running!");
